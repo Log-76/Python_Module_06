@@ -1,10 +1,11 @@
 def validate_ingredients(ingredients: str) -> str:
-    if ingredients == "fire":
+    valid_elements = ["fire", "water", "earth", "air"]
+    # Convert to lowercase for case-insensitive comparison
+    ingredients_lower = ingredients.lower()
+
+    # Check if any valid element is present in the ingredients string
+    is_valid = any(element in ingredients_lower for element in valid_elements)
+    if is_valid:
         return f"{ingredients} - VALID"
-    elif ingredients == "water":
-        return f"{ingredients} - VALID"
-    elif ingredients == "earth":
-        return f"{ingredients} - VALID"
-    elif ingredients == "air":
-        return f"{ingredients} - VALID"
-    return f"{ingredients} - INVALID"
+    else:
+        return f"{ingredients} - INVALID"

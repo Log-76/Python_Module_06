@@ -3,7 +3,7 @@ from alchemy.grimoire.spellbook import record_spell
 import alchemy.grimoire
 
 print("=== Circular Curse Breaking ===")
-print(f'validate_ingredients("fire air"): {validate_ingredients("fire aire")}')
+print(f'validate_ingredients("fire air"): {validate_ingredients("fire air")}')
 print('validate_ingredients("dragon scales"): '
       f'{validate_ingredients("dragon scales")}\n')
 print("Testing spell recording with validation:")
