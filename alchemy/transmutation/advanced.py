@@ -1,9 +1,11 @@
-from alchemy.elements import create_fire, create_earth
+from .basic import lead_to_gold
+from ..potions import healing_potion
 
 
-def lead_to_gold() -> str:
-    return (f"Lead transmuted to gold using {create_fire()}")
+def philosophers_stone() -> str:
+    return (f"Philosopher’s stone created using {lead_to_gold()} "
+            f"and {healing_potion()}")
 
 
-def stone_to_gem() -> str:
-    return (f"Stone transmuted to gem using {create_earth()}")
+def elixir_of_life() -> str:
+    return "Elixir of life: eternal youth achieved!"
